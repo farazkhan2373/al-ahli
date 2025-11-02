@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Ahli Driving Center - Get Your License Fast</title>
+    <meta name="description"
+        content="Al Ahli Driving Center offers comprehensive driving courses in Dubai. Get your license with our expert instructors and modern facilities.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#bb3428',
+                        secondary: '#0c2b5b',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#DC2626',
+                        secondary: '#1E40AF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(12, 43, 91, 0.9), rgba(187, 52, 40, 0.8)), url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .animate-bounce-slow {
+            animation: bounce 2s infinite;
+        }
+
+        .hero-banner {
+            background-image: url('images/desk-banner.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .hero-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (max-width: 1023px) {
+            .hero-banner {
+                background-image: url('images/mobile-banner.png');
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <!-- Logo placeholder - replace with actual logo -->
+                        <img src="/images/alahli-logo.png" class="object-contain w-[200px] h-[100px]" alt="">
+
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#courses" class="text-secondary font-semibold hover:text-primary transition">Courses</a>
+                    <a href="#services" class="text-secondary font-semibold hover:text-primary transition">Services</a>
+                    <a href="#process" class="text-secondary font-semibold hover:text-primary transition">Process</a>
+                    <a href="#contact" class="text-secondary font-semibold hover:text-primary transition">Contact</a>
+                    <a href="tel:800-252454"
+                        class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-red-700 transition">
+                        Call Now
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-btn text-gray-700">
+                        <span class="material-icons">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#courses" class="block px-3 py-2 text-gray-700">Courses</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700">Services</a>
+                <a href="#process" class="block px-3 py-2 text-gray-700">Process</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-banner min-h-screen flex items-center pt-16 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full hero-content">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Hero Content -->
+                <div class="text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                        Get Your <span class="text-yellow-400">Driving License</span> Fast & Easy
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-200">
+                        Professional driving instruction with modern facilities and expert trainers.
+                        Start your journey to safe driving today!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="tel:800-252454"
+                            class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition flex items-center justify-center">
+                            <span class="material-icons inline mr-2">phone</span>
+                            Call 800-252454
+                        </a>
+                        <a href="#courses"
+                            class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-secondary transition text-center">
+                            View Courses
+                        </a>
+                    </div>
+                    <!-- Features -->
+                    <div class="flex flex-wrap gap-6 text-sm">
+                        <div class="flex items-center">
+                            <span class="material-icons mr-2 text-yellow-400">check_circle</span>
+                            Expert Instructors
+                        </div>
+                        <div class="flex items-center">
+                            <span class="material-icons mr-2 text-yellow-400">check_circle</span>
+                            Modern Vehicles
+                        </div>
+                        <div class="flex items-center">
+                            <span class="material-icons mr-2 text-yellow-400">check_circle</span>
+                            Flexible Timings
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form - Desktop -->
+                <div class="hidden lg:block">
+                    <div class="bg-transparent border border-white rounded-2xl shadow-2xl p-8 max-w-lg">
+                        <h3 class="text-2xl font-bold text-white mb-6 text-center">Start Your Journey Today</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <input type="text" id="name" name="name" placeholder="Full Name *" required
+                                    class="w-full px-4 py-3 bg-transparent border border-white rounded-lg text-white focus:border-white outline-none">
+                            </div>
+                            <div>
+                                <input type="email" id="email" name="email" placeholder="Email Address *" required
+                                    class="w-full px-4 py-3 bg-transparent border border-white rounded-lg text-white focus:border-white outline-none">
+                            </div>
+                            <div>
+                                <input type="tel" id="phone" name="phone" placeholder="Phone Number *" required
+                                    class="w-full px-4 py-3 bg-transparent border border-white rounded-lg text-white focus:border-white outline-none">
+                            </div>
+                            <div>
+                                <textarea id="message" name="message" placeholder="Message (Optional)" rows="3"
+                                    class="w-full px-4 py-3 bg-transparent border border-white rounded-lg text-white focus:border-white outline-none"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+                                Get Free Consultation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Mobile Form Section -->
+    <section class="lg:hidden bg-gray-50 py-12">
+        <div class="max-w-md mx-auto px-4">
+            <div class="bg-white rounded-2xl shadow-xl p-6">
+                <h3 class="text-xl font-bold text-secondary mb-6 text-center">Get Started Now</h3>
+                <form id="mobileContactForm" class="space-y-4">
+                    <input type="text" name="name" placeholder="Full Name *" required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <input type="email" name="email" placeholder="Email Address *" required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <input type="tel" name="phone" placeholder="Phone Number *" required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <textarea name="message" placeholder="Message (Optional)" rows="3"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none"></textarea>
+                    <button type="submit"
+                        class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+                        Get Free Consultation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-secondary mb-4">Courses We Offer</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Choose from our comprehensive range of driving courses designed for all skill levels
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Light Motor Vehicle Course -->
+                <div
+                    class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl overflow-hidden hover:shadow-lg transition group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/lmv-orange.png"
+                            alt="Light Motor Vehicle" class="w-full h-full object-cover course-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition -mt-12 relative z-10 shadow-lg">
+                            <span class="material-icons text-white text-2xl">directions_car</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Light Motor Vehicle</h3>
+                        <p class="text-gray-600 mb-4">Perfect for beginners learning to drive regular cars with
+                            professional instruction.</p>
+                        <a href="#contact" class="text-primary font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Motor Cycle Course -->
+                <div
+                    class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl overflow-hidden hover:shadow-lg transition group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/motor-cycle-orange.png"
+                            alt="Motor Cycle" class="w-full h-full object-cover course-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div
+                            class="w-16 h-16 bg-secondary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition -mt-12 relative z-10 shadow-lg">
+                            <span class="material-icons text-white text-2xl">two_wheeler</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Motor Cycle</h3>
+                        <p class="text-gray-600 mb-4">Master motorcycle riding with safety-focused training programs.
+                        </p>
+                        <a href="#contact" class="text-primary font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Heavy Bus Course -->
+                <div
+                    class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl overflow-hidden hover:shadow-lg transition group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/heavy-bus-orange.png"
+                            alt="Heavy Bus" class="w-full h-full object-cover course-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition -mt-12 relative z-10 shadow-lg">
+                            <span class="material-icons text-white text-2xl">airport_shuttle</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Heavy Bus</h3>
+                        <p class="text-gray-600 mb-4">Professional bus driving training for commercial vehicle
+                            operation.</p>
+                        <a href="#contact" class="text-primary font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Heavy Truck Course -->
+                <div
+                    class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl overflow-hidden hover:shadow-lg transition group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/heavy-truck-orange.png"
+                            alt="Heavy Truck" class="w-full h-full object-cover course-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div
+                            class="w-16 h-16 bg-secondary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition -mt-12 relative z-10 shadow-lg">
+                            <span class="material-icons text-white text-2xl">local_shipping</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Heavy Truck</h3>
+                        <p class="text-gray-600 mb-4">Heavy vehicle training for truck drivers and commercial operators.
+                        </p>
+                        <a href="#contact" class="text-primary font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Heavy & Light Forklift Course -->
+                <div
+                    class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl overflow-hidden hover:shadow-lg transition group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/heavy-light-forklift-orange.png"
+                            alt="Forklift" class="w-full h-full object-cover course-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition -mt-12 relative z-10 shadow-lg">
+                            <span class="material-icons text-white text-2xl">precision_manufacturing</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Heavy & Light Forklift</h3>
+                        <p class="text-gray-600 mb-4">Specialized forklift operation training for warehouse and
+                            industrial work.</p>
+                        <a href="#contact" class="text-primary font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Light Bus Course -->
+                <div
+                    class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl overflow-hidden hover:shadow-lg transition group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/light-bus-orange.png"
+                            alt="Light Bus" class="w-full h-full object-cover course-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div
+                            class="w-16 h-16 bg-secondary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition -mt-12 relative z-10 shadow-lg">
+                            <span class="material-icons text-white text-2xl">commute</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Light Bus</h3>
+                        <p class="text-gray-600 mb-4">Light commercial vehicle training for mini-bus and van operations.
+                        </p>
+                        <a href="#contact" class="text-primary font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-secondary mb-4">Value Added Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our advanced services help you achieve your driving license faster with more security and
+                    convenience
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Online Mock Test -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative h-40 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            alt="Online Mock Test" class="w-full h-full object-cover service-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div
+                            class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6 -mt-14 relative z-10 shadow-lg">
+                            <span class="material-icons text-white">quiz</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-4">Online Mock Test</h3>
+                        <p class="text-gray-600">Practice from home with our comprehensive mock test containing 600+
+                            questions.</p>
+                    </div>
+                </div>
+
+                <!-- Call Center -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative h-40 overflow-hidden">
+                        <img src="https://plus.unsplash.com/premium_photo-1661299251279-117a49a32548?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FsbCUyMGNlbnRlcnxlbnwwfHwwfHx8MA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000"
+                            alt="Call Center Support" class="w-full h-full object-cover service-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div
+                            class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6 -mt-14 relative z-10 shadow-lg">
+                            <span class="material-icons text-white">support_agent</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-4">Call Center</h3>
+                        <p class="text-gray-600">24/7 support and assistance. Call our toll-free number 800-252454 for
+                            inquiries.</p>
+                    </div>
+                </div>
+
+                <!-- Free WiFi -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative h-40 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            alt="Free WiFi" class="w-full h-full object-cover service-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div
+                            class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6 -mt-14 relative z-10 shadow-lg">
+                            <span class="material-icons text-white">wifi</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-4">Free WiFi</h3>
+                        <p class="text-gray-600">High-speed internet service available free while inside our center for
+                            your
+                            comfort.</p>
+                    </div>
+                </div>
+
+                <!-- Pickup & Drop -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative h-40 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            alt="Pickup and Drop Service" class="w-full h-full object-cover service-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div
+                            class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6 -mt-14 relative z-10 shadow-lg">
+                            <span class="material-icons text-white">local_shipping</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-4">Pickup & Drop</h3>
+                        <p class="text-gray-600">Convenient pickup and drop service from your home or office. Contact
+                            our
+                            Transportation Department.</p>
+                    </div>
+                </div>
+
+                <!-- Eye Test -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative h-40 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            alt="Eye Test" class="w-full h-full object-cover service-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div
+                            class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6 -mt-14 relative z-10 shadow-lg">
+                            <span class="material-icons text-white">visibility</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-4">Eye Test</h3>
+                        <p class="text-gray-600">Need an eye test for registration? We have it here in our center for
+                            your
+                            comfort.</p>
+                    </div>
+                </div>
+
+                <!-- Customer Feedback -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative h-40 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            alt="Customer Feedback" class="w-full h-full object-cover service-image">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div
+                            class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6 -mt-14 relative z-10 shadow-lg">
+                            <span class="material-icons text-white">feedback</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-4">Customer Feedback</h3>
+                        <p class="text-gray-600">We value your feedback to improve our services. Share your experience
+                            with
+                            us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-secondary mb-4">Our Licensing Process</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our proven process helps all students get their license in the shortest time with the highest skill
+                    level
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group shadow-lg hover:shadow-xl rounded-xl px-2 py-4">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-primary to-red-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                        <span class="text-2xl font-bold text-white">01</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Join</h3>
+                    <p class="text-gray-600">Open a driving file with the documents needed and get started right away.
+                        We guide you every step of the way.</p>
+                </div>
+
+                <div class="text-center group shadow-lg hover:shadow-xl rounded-xl px-2 py-4">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-secondary to-blue-800 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                        <span class="text-2xl font-bold text-white">02</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Training</h3>
+                    <p class="text-gray-600">Attend theoretical and practical training to become a responsible and
+                        secure driver. Our instructors are trained to get you ready.</p>
+                </div>
+
+                <div class="text-center group shadow-lg hover:shadow-xl rounded-xl px-2 py-4">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                        <span class="text-2xl font-bold text-white">03</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Assessment/Test</h3>
+                    <p class="text-gray-600">Pass our internal assessments and be ready for RTA exams with confidence
+                        and preparation.</p>
+                </div>
+
+                <div class="text-center group shadow-lg hover:shadow-xl rounded-xl px-2 py-4">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+                        <span class="text-2xl font-bold text-white">04</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Pick up License</h3>
+                    <p class="text-gray-600">Congratulations! You passed the test and receive your license right away.
+                        Start driving safely!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Start Your Driving Journey?</h2>
+            <p class="text-xl text-gray-200 mb-8">Join thousands of satisfied students who got their license with Al
+                Ahli Driving Center</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:800-252454"
+                    class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition inline-flex items-center justify-center">
+                    <span class="material-icons mr-2">phone</span>
+                    Call 800-252454
+                </a>
+                <a href="#contact"
+                    class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-white hover:text-primary transition">
+                    Get Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Contact Info -->
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-bold text-white mb-8">Contact Us</h2>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <span class="material-icons text-primary mr-4 mt-1">location_on</span>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-2">Address</h3>
+                                <p class="text-gray-300">Al Quoz Industrial 4 Street No.19 A<br>P.O Box No: 282426</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <span class="material-icons text-primary mr-4 mt-1">phone</span>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-2">Phone</h3>
+                                <p class="text-gray-300">Toll Free: 800-252454</p>
+                                <p class="text-gray-300">Tel: 04-2029666</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <span class="material-icons text-primary mr-4 mt-1">email</span>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white mb-2">Email</h3>
+                                <p class="text-gray-300">care@alahlidubai.ae</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-8">
+                        <h3 class="text-lg font-semibold text-white mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/alahlidrivingcenterdubai"
+                                class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-red-700 transition">
+                                <img src="/images/social-icons/facebook.png" width="30" height="30" alt="facebook">
+                            </a>
+                            <a href="https://www.instagram.com/alahlidrivingcenter/"
+                                class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-red-700 transition">
+                                 <img src="/images/social-icons/Instagram.png" width="30" height="30" alt="instagram">
+                            </a>
+                            <a href="https://x.com/AlahliDC"
+                                class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-red-700 transition">
+                                 <img src="/images/social-icons/Linked In.png" width="30" height="30" alt="linkdin">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-secondary mb-6">Send us a Message</h3>
+                        <form id="footerContactForm" class="flex flex-col gap-4">
+                            <div>
+                                <input type="text" name="name" placeholder="Full Name *" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <input type="email" name="email" placeholder="Email Address *" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <div>
+                                <input type="tel" name="phone" placeholder="Phone Number *" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            <!-- <div>
+                                <select name="course" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select Course</option>
+                                    <option value="light-motor">Light Motor Vehicle</option>
+                                    <option value="motorcycle">Motor Cycle</option>
+                                    <option value="heavy-bus">Heavy Bus</option>
+                                    <option value="heavy-truck">Heavy Truck</option>
+                                    <option value="forklift">Heavy & Light Forklift</option>
+                                    <option value="light-bus">Light Bus</option>
+                                </select>
+                            </div> -->
+                            <div class="md:col-span-2">
+                                <textarea name="message" placeholder="Your Message" rows="4"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none"></textarea>
+                            </div>
+                            <div class="md:col-span-2">
+                                <button type="submit"
+                                    class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-300 text-sm mb-4 md:mb-0">
+                    © 2025 Al Ahli Driving Center. All rights reserved.
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="text-gray-300 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
